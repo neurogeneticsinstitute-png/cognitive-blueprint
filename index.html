@@ -5,56 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Neuro-Learning Blueprint™</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #0f172a;
-            color: #f8fafc;
+            background-color: #0b0f19;
             margin: 0;
-            padding: 40px 20px;
+            padding: 0;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
-            align-items: center;
         }
-        .container {
+        .header-container {
             max-width: 800px;
             width: 100%;
             text-align: center;
-            margin-bottom: 40px;
+            margin: 0 auto;
+            padding: 40px 20px 20px 20px;
         }
         h1 {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             color: #f1f5f9;
             margin-bottom: 15px;
             font-weight: 700;
             letter-spacing: -0.025em;
         }
         p {
-            font-size: 1.15rem;
+            font-size: 1.1rem;
             color: #94a3b8;
-            line-height: 1.75;
-            max-width: 650px;
-            margin: 0 auto;
+            line-height: 1.6;
+            margin: 0;
         }
-        .form-container {
+        .form-wrapper {
+            flex: 1;
             width: 100%;
-            max-width: 800px;
-            background: #1e293b;
-            border-radius: 12px;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
-            overflow: hidden;
-            border: 1px solid #334155;
+            display: flex;
+            flex-direction: column;
+        }
+        .form-wrapper iframe, .form-wrapper div {
+            flex: 1;
+            width: 100% !important;
+            height: 100% !important;
+            min-height: 800px;
+        }
+
+        /* FORCEFULLY HIDE THE "MADE WITH ZITE" BADGE */
+        [class*="badge"], [id*="badge"], a[href*="zite.com"] {
+            display: none !important;
+            opacity: 0 !important;
+            visibility: hidden !important;
+            pointer-events: none !important;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
+    <div class="header-container">
         <h1>Why Traditional Learning Fails Exceptional Brains</h1>
-        <p>Traditional study frameworks are built for generic minds. If you or your child face focus bottlenecks, reading fatigue, or executive dysfunction, it is a data mismatch—not a lack of discipline. Complete the diagnostic assessment below to uncover your precise cognitive friction profile.</p>
+        <p>Traditional study frameworks are built for generic minds. Complete the diagnostic assessment below to uncover your precise cognitive friction profile.</p>
     </div>
 
-    <div class="form-container">
-        <div style="width:100%;height:700px;" data-zite-id="jyc97x1vh9" data-zite-embed-type="standard" data-zite-inherit-parameters></div>
+    <div class="form-wrapper">
+        <div style="width:100%;height:100%;" data-zite-id="jyc97x1vh9" data-zite-embed-type="standard" data-zite-inherit-parameters></div>
         <script src="https://server.fillout.com/embed/v2-zite/"></script>
     </div>
 
