@@ -1,30 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Neuro-Learning Blueprint™</title>
-    
-    <!-- LOADS YOUR CUSTOM BRAIN & DNA LOGO AT THE TOP OF THE BROWSER -->
-    <link rel="icon" type="image/png" href="logo.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Neurogenetics Institute | Neuro-Learning Blueprint™</title>
+
+    <!-- Browser tab icon -->
+    <link rel="icon" type="image/png" sizes="512x512" href="logo.png" />
+    <link rel="apple-touch-icon" href="logo.png" />
 
     <style>
-        html, body {
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
             width: 100%;
             height: 100%;
-            background-color: #0b0f19; /* Seamless dark fallback */
-            overflow: hidden; /* Stops any double scrollbar issues */
+            background: #0b0f19;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
         }
+
+        body {
+            display: flex;
+        }
+
         .full-screen-container {
             width: 100vw;
             height: 100vh;
             display: flex;
-            flex-direction: column;
+            flex: 1;
         }
-        /* Forces the Zite embed structure to stretch completely top-to-bottom and side-to-side */
-        .full-screen-container iframe, 
+
+        .full-screen-container iframe,
         .full-screen-container div {
             width: 100% !important;
             height: 100% !important;
@@ -33,13 +45,18 @@
         }
     </style>
 </head>
+
 <body>
 
     <div class="full-screen-container">
-        <!-- THE ALL-IN-ONE SYSTEM ENTIRELY RUNNING FULL-SCREEN -->
-        <div data-zite-id="jyc97x1vh9" data-zite-embed-type="standard" data-zite-inherit-parameters></div>
-        <script src="https://server.fillout.com/embed/v2-zite/"></script>
+        <div 
+            data-zite-id="jyc97x1vh9"
+            data-zite-embed-type="standard"
+            data-zite-inherit-parameters>
+        </div>
     </div>
+
+    <script src="https://server.fillout.com/embed/v2-zite/"></script>
 
 </body>
 </html>
